@@ -29,7 +29,7 @@ Ensure you have Python 3.8.10 installed and CUDA 12.1 properly configured.
    ```bash
    pip install -r requirements.txt
 4. **Download the pretrained weights:**
-Link:
+Link: https://drive.google.com/file/d/1ruQaSMieBwh--SuvuF6XICDzR_py1DrW/view?usp=sharing
 extract the weights folder in the repository
 ### Running the code
 To run the project, simply execute the test.sh script in the project directory:
