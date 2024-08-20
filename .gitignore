@@ -1,0 +1,9 @@
+# Ignore everything inside the output folder
+output
+weights
+# # But do not ignore the output folder itself
+# !output/
+weights.zip
+examples/dashcam.mp4
+
+

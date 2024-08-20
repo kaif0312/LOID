@@ -1,0 +1,14 @@
+numpy==1.24.3
+dill==0.3.8
+dominate==2.9.1
+matplotlib==3.7.1
+numba==0.57.1
+Pillow==9.5.0
+Pillow==10.4.0
+scikit_learn==0.24.2
+scipy==1.14.0
+tensorflow==2.13.1
+torchvision==0.15.1+cu118
+tqdm==4.66.4
+ultralytics==8.0.200
+opencv-python==4.10.0

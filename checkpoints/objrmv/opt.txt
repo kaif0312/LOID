@@ -1,0 +1,81 @@
+            D_steps_per_G: 1                             
+             aspect_ratio: 1.0                           
+                    baseG: baseconv                      
+                batchSize: 48                            	[default: 1]
+                    beta1: 0.0                           
+                    beta2: 0.9                           
+      cache_filelist_read: False                         
+     cache_filelist_write: False                         
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                crop_size: 256                           	[default: 512]
+                d_mask_in: False                         
+                 dataroot: ./datasets/cityscapes/        
+             dataset_mode: coco                          
+       dataset_mode_train: trainimage                    	[default: coco]
+         dataset_mode_val: valimage                      	[default: None]
+                    debug: False                         
+             display_freq: 101                           
+          display_winsize: 400                           
+                 freeze_D: False                         
+                 gan_mode: hinge                         
+                  gpu_ids: 0,1                           	[default: 0]
+                init_type: xavier                        
+            init_variance: 0.02                          
+                  isTrain: True                          	[default: None]
+              lambda_feat: 10.0                          
+               lambda_kld: 0.05                          
+                lambda_l1: 1.0                           
+               lambda_ref: 0.5                           	[default: 1]
+               lambda_vgg: 10.0                          
+              load_base_d: ./checkpoints/objrmv_finetune/pretrained_net_D.pth	[default: None]
+              load_base_g: None                          
+       load_from_opt_file: False                         
+        load_pretrained_d: ./checkpoints/objrmv_finetune/pretrained_net_D_aux.pth	[default: None]
+        load_pretrained_g: ./checkpoints/objrmv_finetune/pretrained_net_G.pth	[default: None]
+                load_size: 640                           	[default: 1024]
+                       lr: 0.0002                        
+              masked_loss: False                         
+         max_dataset_size: 9223372036854775807           
+                    model: arrange                       	[default: pix2pix]
+                 nThreads: 16                            	[default: 0]
+                     name: objrmv                        	[default: label2coco]
+                      ndf: 64                            
+                     netD: deepfill                      	[default: multiscale]
+                     netG: twostagend                    	[default: spade]
+                    niter: 10                            	[default: 50]
+              niter_decay: 0                             
+                  no_TTUR: False                         
+             no_fine_loss: False                         
+                  no_flip: False                         
+          no_ganFeat_loss: True                          	[default: False]
+              no_gan_loss: False                         
+                  no_html: False                         
+               no_l1_loss: False                         
+              no_vgg_loss: True                          	[default: False]
+                norm_type: 1                             
+                optimizer: adam                          
+                output_nc: 3                             
+    path_objectshape_base: ./datasets/object_masks       	[default: ]
+    path_objectshape_list: ./datasets/object_shapes.txt  	[default: ]
+                    phase: train                         
+          preprocess_mode: scale_shortside_and_crop      	[default: scale_width_and_crop]
+               print_freq: 101                           
+          save_epoch_freq: 10                            
+         save_latest_freq: 500000                        
+           serial_batches: False                         
+                   tf_log: False                         
+                       th: 0.5                           
+          train_image_dir: bag5_256x256                  	[default: None]
+         train_image_list: train_names.txt               	[default: None]
+      train_image_postfix:                               
+                  trainer: pix2pix                       
+              update_part: all                           
+                   use_th: False                         
+            val_image_dir: ./datasets/places2sample1k_val/places2samples1k_crop256	[default: None]
+           val_image_list: ./datasets/places2sample1k_val/files.txt	[default: None]
+        val_image_postfix: .jpg                          
+             val_mask_dir: ./datasets/places2sample1k_val/places2samples1k_256_mask_square128	[default: None]
+         val_mask_postfix: .png                          
+          validation_freq: 50000                         
+              which_epoch: latest                        
